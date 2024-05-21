@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
     <header>
         <h1>Contact Us</h1>
     </header>
-    <main class="contact-page">
-        <section class="contact-section">
-            <h2>Get in Touch</h2>
-            <p>If you have any questions, feel free to reach out to us:</p>
-            <p>Email: <a href="mailto:fakeemail@example.com">fakeemail@example.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
+    <main class="Dog">
+        <h1>Get In Touch</h1>
+        <p>If you have any questions, feel free to reach out to us through the following contact details or by filling out the contact form below:</p>
+        <p>Email: <a href="mailto:info@crawsome.com">info@crawsome.com</a></p>
+        <p>Phone: 123-456-7890</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <h2>Follow Us</h2>
+        <ul class="social-media">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </main>
     <footer>
-        <p>Author: Team Name</p>
-        <p>Contact: <a href="mailto:fakeemail@example.com">fakeemail@example.com</a></p>
-        <p>Project: AD-07 Blog Site</p>
-    </footer>
+        <p>Breakout Room 5 | Cohort 1 | Generation</p>
+      </footer>
+      <!--
+      This script places a badge on your repl's full-browser view back to your repl's cover
+      page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+      teal, blue, blurple, magenta, pink!
+      -->
+      <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 </html>
