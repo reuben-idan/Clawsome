@@ -12,8 +12,17 @@
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
     </nav>
-    <div class="container">
-      <div class="header">
+    <div
+      class="container"
+      style="
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div class="header" style="text-align: center; padding: 20px 0">
         <h1>About Claw<span style="color: rgb(255, 0, 106)">some</span>!</h1>
         <p>
           Dearest reader & pet lover, you are awe<span
@@ -21,8 +30,11 @@
             >some</span
           >!
         </p>
+        <div>
+          <img src="/Pic/Love.jpg" alt="love image" width="550px" />
+        </div>
       </div>
-      <div class="mission">
+      <div class="mission" style="text-align: center; padding: 20px 0">
         <h2>Our Mission</h2>
         <p>
           At Clawsome, we are dedicated to providing the best resources for pet
@@ -30,61 +42,66 @@
           and informed community of pet enthusiasts.
         </p>
       </div>
+      <div
+        class="cards"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        "
+      >
+        <div
+          class="card"
+          style="
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+          "
+        >
           <h3>Meet the Team</h3>
-          <p>
-            At Clawsome, we have assembled a team of passionate individuals who
-            share a love for pets and a dedication to providing valuable
-            resources for pet owners. Get to know the faces behind Clawsome and
-            discover the unique talents and expertise each team member brings to
-            our community.
-          </p>
-        </div>
-        <div class="card">
           <img
             src="/Pic/Meet-the-team.jpg"
-            alt="Card Image 2"
-            width="400"
-            height="270"
+            alt="Card Image 1"
+            style="max-width: 100%; border-radius: 10px"
+            width="270px"
+            height="230px"
           />
-          <h3>Our Blog</h3>
           <p>
-            Welcome to the Clawsome blog and shop, your go-to destination for
-            all things pet-related! Explore a treasure trove of articles, tips,
-            and insights curated by our team of experts in our blog. From pet
-            care advice to product reviews, we cover a wide range of topics to
-            help you provide the best care for your furry friends. While you're
-            here, don't forget to check out our shop, where you can browse and
-            purchase a curated collection of pet essentials and accessories.
-            From nutritious food to cozy beds and stylish collars, we offer
-            everything you need to keep your pets happy and healthy. Shop with
-            confidence, knowing that every purchase supports our mission of
-            promoting responsible pet ownership and building a vibrant community
-            of pet lovers.
+            At Clawsome, we have a team of passionate individuals who share a
+            love for pets and a dedication to providing valuable resources for
+            pet owners. Get to know the faces behind Clawsome and discover the
+            expertise each team member brings to our community. Click on a
+            teammate's profile and give them a virtual high five and tell them
+            what makes them stand out.
           </p>
         </div>
-        <div class="card">
-          <video width="400" height="270" controls autoplay>
-            <source src="/Pic/OurBlog.mp4" type="video/mp4" />
-          </video>
-          <h3>Community Stories: Have a seat at our table</h3>
-          <p>
-            At Clawsome, we believe that every pet and pet owner has a unique
-            and heartwarming story to share. Our Community Stories section
-            celebrates these incredible bonds and experiences. Read inspiring
-            tales from fellow pet lovers, discover the impact our community is
-            making, and find out how you can get involved. Join us in
-            celebrating the joy, love, and companionship that our pets bring
-            into our lives.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="/Pic/Our-Community.jpg"
-            alt="Card Image 3"
-            width="400"
-            height="270"
-          />
+        <div
+          class="card"
+          style="
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+          "
+        >
           <h3>Our Values</h3>
+          <img
+            src="/Pic/Our Values.jpg"
+            alt="Values Image"
+            style="max-width: 100%; border-radius: 10px"
+            width="270"
+            height="230"
+          />
           <p>
             Our values are the foundation of everything we do. We are committed
             to promoting responsible pet ownership, providing accurate and
@@ -94,18 +111,89 @@
             dedication to these principles guides us in our mission to be your
             trusted source for all things pet-related.
           </p>
-          <img
-            src="/Pic/Our Values.jpg"
-            alt="Values Image"
-            width="400"
-            height="270"
-          />
+        </div>
+        <div
+          class="card"
+          style="
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+          "
+        >
+          <h3>Our Community</h3>
+          <video
+            width="270"
+            height="230"
+            controls
+            autoplay
+            loop
+            style="max-width: 100%; border-radius: 10px"
+          >
+            <source src="/Pic/OurCommunity.mp4" type="video/mp4" />
+          </video>
+          <p>
+            At Clawsome, we believe that every pet and pet owner has a unique
+            and heartwarming story to share. Our Community Stories section
+            celebrates these incredible bonds and experiences. Read inspiring
+            tales from fellow pet lovers, and discover the impact our community
+            is making. Join us in celebrating the joy, love, and companionship
+            that our pets bring into our lives.Have a seat at our table!
+          </p>
+        </div>
+        <div
+          class="card"
+          style="
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+          "
+        >
+          <h3>Our Blog</h3>
+          <video
+            width="270"
+            height="230"
+            controls
+            autoplay
+            loop
+            style="max-width: 100%; border-radius: 10px"
+          >
+            <source src="/Pic/DogGrooming.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Welcome to the Clawsome blog; your go-to destination for all things
+            pet-related! From pet care advice to product reviews, we cover a
+            wide range of topics to help you provide the best care for your
+            furry friends. While you're here, don't forget to check out our
+            shop, where you can browse and purchase a curated collection of pet
+            essentials and accessories. From nutritious food to cozy beds and
+            stylish collars, we offer everything you need to keep your pets
+            happy and healthy.
+          </p>
         </div>
       </div>
     </div>
     <footer>
-      <p>Breakout Room 5 | Cohort 1 | Generation</p>
-        
+      <p>&copy; 2024 Your Name or Website Name</p>
     </footer>
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script
+      src="https://replit.com/public/js/replit-badge-v2.js"
+      theme="dark"
+      position="bottom-right"
+    ></script>
   </body>
 </html>
