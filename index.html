@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width" />
     <title>Welcome to the Wonderful World of Pets!</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .card {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 45%;
+      }
+
+      .card img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,36 +49,42 @@
         </p>
       </section>
 
-      <section class="benefits">
-        <h2>Benefits of Owning a Pet</h2>
-        <ul>
-          <li>Increased companionship and reduced feelings of loneliness</li>
-          <li>
-            Improved physical and mental health due to increased activity and
-            social interaction
-          </li>
-          <li>
-            Enhanced social skills, especially for children, through caring for
-            another living being
-          </li>
-          <li>
-            Stress reduction and feelings of relaxation due to the calming
-            presence of pets
-          </li>
-          <li>
-            Increased responsibility and routine, promoting a sense of purpose
-          </li>
-        </ul>
-      </section>
+      <div class="card-container">
+        <div class="card">
+          <!-- Start of first card -->
+          <h2>Benefits of Owning a Pet</h2>
+          <ul>
+            <li>Increased companionship and reduced feelings of loneliness</li>
+            <li>
+              Improved physical and mental health due to increased activity and
+              social interaction
+            </li>
+            <li>
+              Enhanced social skills, especially for children, through caring
+              for another living being
+            </li>
+            <li>
+              Stress reduction and feelings of relaxation due to the calming
+              presence of pets
+            </li>
+            <li>
+              Increased responsibility and routine, promoting a sense of purpose
+            </li>
+          </ul>
+        </div>
+        <!-- End of first card -->
 
-      <section class="call-to-action">
-        <h3>Ready to welcome a furry (or feathery) friend into your life?</h3>
-        <p>
-          Research different pet breeds or species to find the perfect match for
-          your lifestyle. Consider adoption from a local shelter or rescue
-          organization to give a loving home to an animal in need.
-        </p>
-      </section>
+        <div class="card">
+          <!-- Start of second card -->
+          <h3>Ready to welcome a furry (or feathery) friend into your life?</h3>
+          <p>
+            Research different pet breeds or species to find the perfect match
+            for your lifestyle. Consider adoption from a local shelter or rescue
+            organization to give a loving home to an animal in need.
+          </p>
+        </div>
+        <!-- End of second card -->
+      </div>
     </main>
 
     <footer>
