@@ -5,6 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      nav {
+          background-color: #333;
+          overflow: hidden;
+          position: -webkit-sticky; /* For Safari */
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+      }
+      nav a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      nav a:hover {
+          background-color: #111;
+      }
+      header, main, footer {
+          padding: 20px;
+      }
+      header h1 {
+          font-size: 2em;
+      }
+      main {
+          padding: 20px;
+      }
+      main h1 {
+          font-size: 1.5em;
+      }
+      main p, main form, main ul {
+          margin: 20px 0;
+      }
+      form label {
+          display: block;
+          margin-bottom: 5px;
+      }
+      form input, form textarea, form button {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      form button {
+          background-color: #333;
+          color: white;
+          border: none;
+      }
+      form button:hover {
+          background-color: #555;
+      }
+      ul.social-media {
+          list-style-type: none;
+          padding: 0;
+      }
+      ul.social-media li {
+          display: inline;
+          margin-right: 10px;
+      }
+      ul.social-media li a {
+          text-decoration: none;
+          color: #333;
+      }
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+      }
+      .follow-us {
+       float: left;
+       margin-left: 10px; /* Optional: Add some margin if needed */
+     }
+
+  </style>
+
   </head>
   <body>
     <nav>
@@ -21,8 +112,8 @@
         If you have any questions, feel free to reach out to us through the
         following contact details or by filling out the contact form below:
       </p>
-      <p>Email: <a href="mailto:info@crawsome.com">info@crawsome.com</a></p>
-      <p>Phone: 123-456-7890</p>
+      <p><span class="material-symbols-outlined">mail</span>Email: <a href="mailto:info@crawsome.com">info@crawsome.com</a></p>
+      <p><span class="material-symbols-outlined">call</span>Phone: 123-456-7890</p>
       <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -32,7 +123,7 @@
         <textarea id="message" name="message" rows="4" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-      <h2>Follow Us</h2>
+      
       <ul class="social-media">
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Twitter</a></li>
@@ -41,6 +132,7 @@
       </ul>
     </main>
     <footer>
+      <h2 class="follow-us">Follow Us</h2>
       <p>&copy; Claw<span style="color: rgb(255, 0, 106)">some</span> 2024</p>
         
     </footer>
