@@ -1,4 +1,4 @@
-html {
+/*html {
     height: 100%;
     width: 100%;
   }
@@ -26,14 +26,14 @@ html {
   }
   
   body {
-    position: relative; /* Enable fixed positioning for the navigation bar */
+    position: relative; /* Enable fixed positioning for the navigation bar 
   }
   
   nav {
-    position: fixed; /* Fix the navigation bar to the top */
+    position: fixed; /* Fix the navigation bar to the top 
     top: 0;
     left: 0;
-    width: 100%; /* Make it span the entire width */
+    width: 100%; /* Make it span the entire width 
   }
   
   header {
@@ -100,4 +100,4 @@ html {
     padding: 10px;
     text-align: center;
   }
-   
+   */
