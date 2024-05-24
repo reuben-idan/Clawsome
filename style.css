@@ -1,5 +1,9 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
+  height: 100%;
+  width: 100%;
+}
+.vertical-div {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+}
