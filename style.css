@@ -1,11 +1,11 @@
 /* Modern Glassmorphism & Responsive Styles for Clawsome */
 
 :root {
-  --primary: #aad9fa;
+  --primary: #ffb6d5;
   --accent: #ff006a;
-  --glass-bg: rgba(255, 255, 255, 0.25);
-  --glass-border: rgba(255, 255, 255, 0.18);
-  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --glass-bg: rgba(255, 240, 246, 0.7);
+  --glass-border: rgba(255, 182, 213, 0.18);
+  --shadow: 0 8px 32px 0 rgba(255, 0, 106, 0.10);
   --radius: 18px;
   --blur: 16px;
   --font-main: 'Segoe UI', 'Roboto', Arial, sans-serif;
@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
-  background: linear-gradient(135deg, #e0e7ef 0%, #aad9fa 100%);
+  background: linear-gradient(135deg, #fff0f6 0%, #ffffff 100%);
   color: #222;
 }
 
