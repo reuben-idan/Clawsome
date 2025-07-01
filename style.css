@@ -1,103 +1,188 @@
-/*html {
-    height: 100%;
-    width: 100%;
-  }
-  
+/* Modern Glassmorphism & Responsive Styles for Clawsome */
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+:root {
+  --primary: #aad9fa;
+  --accent: #ff006a;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --radius: 18px;
+  --blur: 16px;
+  --font-main: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: linear-gradient(135deg, #e0e7ef 0%, #aad9fa 100%);
+  color: #222;
+}
+
+nav.navbar {
+  backdrop-filter: blur(var(--blur));
+  background: var(--glass-bg) !important;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  border-radius: 0 0 var(--radius) var(--radius);
+  margin-bottom: 2rem;
+}
+
+.navbar-brand img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+}
+
+.navbar-brand h6 {
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+main,
+.main {
+  padding: 2rem 1rem;
+}
+
+.card,
+.Advertisement,
+.news-feed,
+.newsletter,
+.mission,
+.cards .card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur));
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover,
+.cards .card:hover {
+  box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.22);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  font-weight: 700;
+  color: #222;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #222;
+}
+
+footer {
+  background: var(--glass-bg);
+  border-top: 1px solid var(--glass-border);
+  box-shadow: 0 -2px 16px 0 rgba(31, 38, 135, 0.08);
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-top: 2rem;
+}
+
+input,
+textarea,
+button,
+.form-control {
+  border-radius: 8px !important;
+  border: 1px solid #e0e7ef !important;
+  background: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 1px 4px rgba(31, 38, 135, 0.05);
+}
+
+button,
+.btn {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover,
+.btn:hover {
+  background: #d9005c !important;
+}
+
+/* Responsive Layouts */
+@media (max-width: 991px) {
+  .row {
+    flex-direction: column !important;
   }
-  
-  nav {
-    background-color: #eee;
-    padding: 10px;
+
+  .col-2,
+  .col-8,
+  .col-sm-8,
+  .col-sm-2 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-    margin-right: 20px;
+
+  .card img,
+  .cards .card img,
+  .Advertisement img {
+    width: 100% !important;
+    height: auto !important;
   }
-  
-  nav a:hover {
-    color: #333;
+}
+
+@media (max-width: 600px) {
+
+  main,
+  .main {
+    padding: 1rem 0.2rem;
   }
-  
-  body {
-    position: relative; /* Enable fixed positioning for the navigation bar 
-  }
-  
-  nav {
-    position: fixed; /* Fix the navigation bar to the top 
-    top: 0;
-    left: 0;
-    width: 100%; /* Make it span the entire width 
-  }
-  
-  header {
-    text-align: center;
-    padding: 20px;
-  }
-  
+
   h1 {
-    font-size: 2em;
-    margin-bottom: 0;
+    font-size: 1.5rem;
   }
-  
-  main {
-    padding: 20px;
+
+  .navbar-brand h6 {
+    font-size: 1rem;
   }
-  
-  section {
-    margin-bottom: 20px;
+
+  .card,
+  .Advertisement,
+  .news-feed,
+  .newsletter,
+  .mission,
+  .cards .card {
+    padding: 1rem;
   }
-  
-  .intro img {
-    width: 100%;
-    justify-content: space-evenly;
-    margin-right: 20px;
-  }
-  
-  .intro p {
-    font-size: 1.1em;
-    line-height: 1.5;
-  }
-  
-  .benefits {
-    text-align: center;
-  }
-  
-  .benefits h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .benefits ul {
-    
-    list-style-type: square;
-    text-align-last: left;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .benefits li {
-    margin-bottom: 5px;
-  }
-  
-  .call-to-action {
-    text-align: center;
-  }
-  
-  .call-to-action h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-   */
+}
+
+/* Utility classes */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur));
+}
