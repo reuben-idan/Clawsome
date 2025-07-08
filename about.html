@@ -18,12 +18,7 @@
       <nav class="navbar navbar-expand-lg glass">
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img
-              src="Pic/logo.jpg"
-              class="me-2"
-              style="border-radius: 40px; width: 50px; height: 50px"
-              alt="Clawsome logo"
-            />
+            <img src="Pic/logo.jpg" class="me-2 logo-img" alt="Clawsome logo" />
             <h6 class="mb-0">
               Claw<span style="color: var(--accent)">some</span>!
             </h6>
@@ -50,26 +45,12 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="contact.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link" href="about.html" aria-current="page"
+                  >About Us</a
                 >
-                  Contact Us
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="index.html">Home</a></li>
-                  <li><a class="dropdown-item" href="about.html">About</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -79,39 +60,32 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
+              <button class="btn" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-      <header class="my-4">
-        <h1>About Claw<span style="color: var(--accent)">some</span>!</h1>
-        <p>
-          Dearest reader & pet lover, you are awe<span
-            style="color: var(--accent)"
-            >some</span
-          >!
+      <header class="hero-section py-5 mb-4">
+        <h1 class="gradient-text display-3 mb-3">
+          About <span style="color: var(--accent)">Clawsome</span>
+        </h1>
+        <p class="lead text-secondary mb-4">
+          Meet the team, discover our values, and see what makes our pet-loving
+          community special.
         </p>
-        <div>
-          <img
-            src="Pic/Love.jpg"
-            alt="love image"
-            class="img-fluid rounded"
-            style="max-width: 550px"
-          />
-        </div>
       </header>
-      <div class="row">
+      <div class="divider my-5"></div>
+      <div class="row g-4">
         <aside class="col-12 col-lg-2 mb-4 mb-lg-0">
-          <div class="Advertisement glass">
+          <div
+            class="Advertisement glass animate__animated animate__fadeInLeft"
+          >
             <h4>Run Your Ad Today!</h4>
             <div>
               <img
                 src="Pic/Toyota forerunner.jpg"
                 alt="Advertisement"
-                class="img-fluid rounded"
+                class="img-fluid rounded shadow mb-3"
               />
             </div>
             <p>
@@ -124,7 +98,9 @@
           </div>
         </aside>
         <main class="col-12 col-lg-8">
-          <section class="mission glass mb-4">
+          <section
+            class="mission glass mb-4 animate__animated animate__fadeInUp"
+          >
             <h2>Our Mission</h2>
             <p>
               At Clawsome, we are dedicated to providing the best resources for
@@ -134,12 +110,14 @@
           </section>
           <div class="row g-4 cards">
             <div class="col-12 col-md-6">
-              <div class="card glass h-100">
+              <div
+                class="card glass h-100 animate__animated animate__fadeInUp animate__delay-1s"
+              >
                 <h3>Meet the Team</h3>
                 <img
                   src="Pic/Meet-the-team.jpg"
-                  alt="Card Image 1"
-                  class="img-fluid rounded mb-3"
+                  alt="The Clawsome team smiling together with pets"
+                  class="img-fluid rounded shadow mb-3"
                   width="270"
                   height="230"
                 />
@@ -154,12 +132,14 @@
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="card glass h-100">
+              <div
+                class="card glass h-100 animate__animated animate__fadeInUp animate__delay-2s"
+              >
                 <h3>Our Values</h3>
                 <img
                   src="Pic/Our Values.jpg"
-                  alt="Values Image"
-                  class="img-fluid rounded mb-3"
+                  alt="A creative representation of Clawsome's core values"
+                  class="img-fluid rounded shadow mb-3"
                   width="270"
                   height="230"
                 />
@@ -178,8 +158,8 @@
           </div>
         </main>
         <aside class="col-12 col-lg-2 mt-4 mt-lg-0">
-          <div class="news-feed glass">
-            <div class="news-item">
+          <div class="news-feed glass animate__animated animate__fadeInRight">
+            <div class="news-item mb-3">
               <h2>Exploring Different Types of Sessions</h2>
               <p>
                 Learn about the various types of sessions in web development,
@@ -198,7 +178,7 @@
           </div>
         </aside>
       </div>
-      <footer class="bg-light text-center py-4 glass mt-5">
+      <footer class="text-center py-4 glass mt-5">
         <div class="container">
           <div class="col-md-12">
             <div class="newsletter mb-3">
