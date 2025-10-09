@@ -79,14 +79,23 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">Search</button>
+            <form class="d-flex" role="search" id="searchForm">
+              <div class="search-container">
+                <input
+                  class="form-control me-2 search-input"
+                  type="search"
+                  placeholder="Search for pets, tips, or advice..."
+                  aria-label="Search"
+                  id="searchInput"
+                  autocomplete="off"
+                />
+                <button class="btn search-btn" type="submit">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="21 21l-4.35-4.35"></path>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
